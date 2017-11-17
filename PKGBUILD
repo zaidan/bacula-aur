@@ -4,11 +4,12 @@
 # Contributor: Steven Haigh <netwiz@crc.id.au>
 # Contributor: Georg Altmann <george@george-net.de>
 # bacula-fd.service by Christian Hesse <arch@eworm.de>
+# Contributor: Firas Zaidan <firas@zaidan.de>
 
 pkgbase=bacula
 _dir_backends=("${pkgbase}-dir-sqlite3" "${pkgbase}-dir-mariadb" "${pkgbase}-dir-postgresql")
 pkgname=("${pkgbase}-common" "${pkgbase}-bat" "${pkgbase}-console" "${pkgbase}-fd" "${pkgbase}-sd" "${pkgbase}-dir" ${_dir_backends[@]} "${pkgbase}-dir-mysql")
-pkgver=9.0.2
+pkgver=9.0.5
 pkgrel=1
 arch=(i686 x86_64)
 pkgdesc="${pkgbase^} - A Network Backup Tool "
@@ -23,7 +24,7 @@ source=("http://downloads.sourceforge.net/sourceforge/${pkgbase}/${pkgbase}-${pk
 'bacula-sd.service'
 '00-qmake4.patch')
 
-sha1sums=('4848504e028c260c9e73a3bf65bb8376102ae77a'
+sha1sums=('2c47fb782c875fb1789510f2d22898ffaf751820'
 '1a68381bd8d0b78cffe78634d160b1a287333c4e'
 '151c6d8b06d8be029a9a50be4d6e64954c88f48c'
 'a682cd35bf2a85fd7274f4241a91483c53c43f37'
